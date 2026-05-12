@@ -46,14 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessLayer\ClinicRepository.cs" />
+    <Compile Include="DataAccessLayer\PetRepository.cs" />
+    <Compile Include="DataAccessLayer\VaccinationRepository.cs.cs" />
+    <Compile Include="DataAccessLayer\VetRepository.cs" />
+    <Compile Include="DataAccessLayer\VisitRepository.cs.cs" />
+    <Compile Include="Models\Appointmentslot.cs" />
+    <Compile Include="Models\Clinic.cs" />
+    <Compile Include="Models\Clinicalnote.cs" />
+    <Compile Include="Models\Owner.cs" />
+    <Compile Include="Models\Pet.cs" />
+    <Compile Include="Models\Reminder.cs" />
+    <Compile Include="Models\Vaccination.cs" />
+    <Compile Include="Models\Vaccineinventory.cs" />
+    <Compile Include="DataAccessLayer\DBConnection.cs" />
+    <Compile Include="DataAccessLayer\DBHandler.cs" />
+    <Compile Include="DataAccessLayer\OwnerRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Veterinarian.cs" />
+    <Compile Include="Models\Visit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veterinary_networkDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Veterinary_networkDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,13 +95,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Veterinary_networkDataSet.xsc">
+      <DependentUpon>Veterinary_networkDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Veterinary_networkDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Veterinary_networkDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Veterinary_networkDataSet.xss">
+      <DependentUpon>Veterinary_networkDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
-    <Folder Include="Database\" />
     <Folder Include="Documentation\" />
     <Folder Include="Forms\" />
     <Folder Include="Queries\" />
